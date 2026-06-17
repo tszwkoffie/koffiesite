@@ -56,7 +56,7 @@ const slideVariants = {
     scale: 1,
     rotateY: 0,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 300,
       damping: 30,
     },
@@ -67,7 +67,7 @@ const slideVariants = {
     scale: 0.9,
     rotateY: direction > 0 ? -15 : 15,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 300,
       damping: 30,
     },
